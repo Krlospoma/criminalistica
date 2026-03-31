@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investigación Criminal</title>
+
+    <style>
+      /* RESET */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background: #f5f7fa;
+        color: #333;
+      }
+
+      /* HEADER */
+      header {
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: white;
+        padding: 20px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .container {
+        width: 90%;
+        margin: auto;
+      }
+
+      header h1 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style: none;
+      }
+
+      nav li {
+        margin: 5px 10px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+
+      nav a:hover {
+        background: #0779e4;
+      }
+
+      /* SECTIONS */
+      .section {
+        padding: 50px 0;
+      }
+
+      .section h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #222;
+      }
+
+      /* CARDS */
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .card {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card h3 {
+        margin-bottom: 10px;
+        color: #0779e4;
+      }
+
+      /* IMAGE */
+      .image-container {
+        margin: 20px 0;
+        text-align: center;
+      }
+
+      .image-container img {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 10px;
+      }
+
+      /* STEP STYLE */
+      .step {
+        border-left: 5px solid #0779e4;
+        padding-left: 15px;
+        margin-bottom: 15px;
+      }
+
+      /* TABLE */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+
+      th {
+        background: #0779e4;
+        color: white;
+      }
+
+      /* INTEGRANTES */
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+      }
+
+      .person {
+        background: white;
+        padding: 15px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* FOOTER */
+      footer {
+        background: #222;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      /* ANIMACIÓN */
+      .card {
+        animation: fadeIn 1s ease;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1>Investigación Criminal</h1>
+        <nav>
+          <ul>
+            <li><a href="#intro">Introducción</a></li>
+            <li><a href="#desarrollo">Desarrollo</a></li>
+            <li><a href="#pruebas">Pruebas</a></li>
+            <li><a href="#cadena">Cadena</a></li>
+            <li><a href="#autor">Autor</a></li>
+            <li><a href="#integrantes">Integrantes</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- INTRO -->
+    <section id="intro" class="section">
+      <div class="container">
+        <h2>Introducción</h2>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Definición</h3>
+            <p>
+              Proceso científico para analizar delitos y encontrar la verdad.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Objetivo</h3>
+            <p>Determinar si hubo delito e identificar responsables.</p>
+          </div>
+
+          <div class="card">
+            <h3>Tipos</h3>
+            <p>Investigación reactiva y proactiva.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESARROLLO -->
+    <section id="desarrollo" class="section">
+      <div class="container">
+        <h2>Desarrollo</h2>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Método Científico</h3>
+            <p>Observación → hipótesis → experimentación → conclusión.</p>
+          </div>
+
+          <div class="card">
+            <h3>Principios</h3>
+            <p>Uso, intercambio, reconstrucción, probabilidad y certeza.</p>
+          </div>
+
+          <div class="card">
+            <h3>Criminalística</h3>
+            <p>Responde al quién, cómo, cuándo y dónde del delito.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRUEBAS -->
+    <section id="pruebas" class="section">
+      <div class="container">
+        <h2>Recolección de Pruebas</h2>
+
+        <div class="cards">
+          <div class="card">
+            <h3>¿Qué?</h3>
+            <p>Recolección de evidencias.</p>
+          </div>
+
+          <div class="card">
+            <h3>¿Quién?</h3>
+            <p>Investigadores criminalísticos.</p>
+          </div>
+
+          <div class="card">
+            <h3>¿Cuándo?</h3>
+            <p>Lo antes posible.</p>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img src="images/pruebas.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CADENA -->
+    <section id="cadena" class="section">
+      <div class="container">
+        <h2>Cadena de Custodia</h2>
+
+        <div class="card">
+          <p>
+            Garantiza que la evidencia no sea alterada desde la escena hasta el
+            juicio.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUTOR -->
+    <section id="autor" class="section">
+      <div class="container">
+        <h2>Identificación del Autor</h2>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Dactiloscopía</h3>
+            <p>Huellas dactilares únicas.</p>
+          </div>
+
+          <div class="card">
+            <h3>ADN</h3>
+            <p>Identificación genética.</p>
+          </div>
+
+          <div class="card">
+            <h3>Reconocimiento</h3>
+            <p>Fotográfico o en rueda.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTEGRANTES -->
+    <section id="integrantes" class="section">
+      <div class="container">
+        <h2>Integrantes</h2>
+
+        <div class="grid">
+          <div class="person">ARUQUIPA JAVIER</div>
+          <div class="person">AYAVIRI VICTOR</div>
+          <div class="person">CHINO FRANZ</div>
+          <div class="person">COLQUE MARY</div>
+          <div class="person">CÓNDORI ARIEL</div>
+          <div class="person">ESPINOZA JHONNY</div>
+          <div class="person">LÓPEZ ISAAC</div>
+          <div class="person">MAYTA RUBÉN</div>
+          <div class="person">CRISPIN FREDDY</div>
+          <div class="person">POMA JUAN CARLOS</div>
+          <div class="person">QUISPE DANIEL</div>
+          <div class="person">VARGAS JHON</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Investigación Criminal</p>
+    </footer>
+  </body>
+</html>
