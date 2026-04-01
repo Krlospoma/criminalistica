@@ -5,333 +5,1087 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Investigación Criminal</title>
 
-    <style>
-      /* RESET */
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-      body {
-        font-family: "Segoe UI", sans-serif;
-        background: #f5f7fa;
-        color: #333;
-      }
-
-      /* HEADER */
-      header {
-        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-        color: white;
-        padding: 20px 0;
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-      }
-
-      .container {
-        width: 90%;
-        margin: auto;
-      }
-
-      header h1 {
-        text-align: center;
-        margin-bottom: 10px;
-      }
-
-      nav ul {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        list-style: none;
-      }
-
-      nav li {
-        margin: 5px 10px;
-      }
-
-      nav a {
-        color: white;
-        text-decoration: none;
-        padding: 8px 12px;
-        border-radius: 5px;
-        transition: 0.3s;
-      }
-
-      nav a:hover {
-        background: #0779e4;
-      }
-
-      /* SECTIONS */
-      .section {
-        padding: 50px 0;
-      }
-
-      .section h2 {
-        text-align: center;
-        margin-bottom: 30px;
-        color: #222;
-      }
-
-      /* CARDS */
-      .cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-      }
-
-      .card {
-        background: white;
-        padding: 20px;
-        border-radius: 12px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        transition: 0.3s;
-      }
-
-      .card:hover {
-        transform: translateY(-5px);
-      }
-
-      .card h3 {
-        margin-bottom: 10px;
-        color: #0779e4;
-      }
-
-      /* IMAGE */
-      .image-container {
-        margin: 20px 0;
-        text-align: center;
-      }
-
-      .image-container img {
-        width: 100%;
-        max-width: 400px;
-        border-radius: 10px;
-      }
-
-      /* STEP STYLE */
-      .step {
-        border-left: 5px solid #0779e4;
-        padding-left: 15px;
-        margin-bottom: 15px;
-      }
-
-      /* TABLE */
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-      }
-
-      th,
-      td {
-        border: 1px solid #ccc;
-        padding: 10px;
-      }
-
-      th {
-        background: #0779e4;
-        color: white;
-      }
-
-      /* INTEGRANTES */
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 15px;
-      }
-
-      .person {
-        background: white;
-        padding: 15px;
-        text-align: center;
-        border-radius: 10px;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-      }
-
-      /* FOOTER */
-      footer {
-        background: #222;
-        color: white;
-        text-align: center;
-        padding: 20px;
-      }
-
-      /* ANIMACIÓN */
-      .card {
-        animation: fadeIn 1s ease;
-      }
-
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-    </style>
+    <!-- TU CSS -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <header>
-      <div class="container">
-        <h1>Investigación Criminal</h1>
-        <nav>
-          <ul>
-            <li><a href="#intro">Introducción</a></li>
-            <li><a href="#desarrollo">Desarrollo</a></li>
-            <li><a href="#pruebas">Pruebas</a></li>
-            <li><a href="#cadena">Cadena</a></li>
-            <li><a href="#autor">Autor</a></li>
-            <li><a href="#integrantes">Integrantes</a></li>
-          </ul>
-        </nav>
+    <!-- HEADER -->
+    <header class="bg-dark text-white p-3 sticky-top text-center">
+      <h1>Investigación Criminal</h1>
+
+      <div>
+        <a href="#intro" class="btn btn-outline-light btn-sm m-1"
+          >Introducción</a
+        >
+        <a href="#desarrollo" class="btn btn-outline-light btn-sm m-1"
+          >Desarrollo</a
+        >
+        <a href="#pruebas" class="btn btn-outline-light btn-sm m-1">Pruebas</a>
+        <a href="#cadena" class="btn btn-outline-light btn-sm m-1">Cadena</a>
+        <a href="#autor" class="btn btn-outline-light btn-sm m-1">Autor</a>
+        <a href="#integrantes" class="btn btn-outline-light btn-sm m-1"
+          >Integrantes</a
+        >
       </div>
     </header>
 
     <!-- INTRO -->
-    <section id="intro" class="section">
+    <section id="intro" class="py-5">
       <div class="container">
-        <h2>Introducción</h2>
+        <h2 class="text-center mb-4">
+          Introducción a la Investigación Criminal
+        </h2>
 
-        <div class="cards">
-          <div class="card">
-            <h3>Definición</h3>
+        <p class="text-center mb-5">
+          La investigación criminal es una herramienta fundamental dentro del
+          sistema de justicia penal, ya que permite descubrir la verdad de los
+          hechos a través de métodos científicos, el análisis de evidencias y la
+          reconstrucción lógica de los acontecimientos delictivos.
+        </p>
+
+        <div class="row g-4">
+          <!-- DEFINICIÓN -->
+          <div class="col-md-4">
+            <div class="card shadow text-center p-3 h-100">
+              <h4 class="text-primary">Definición</h4>
+              <p>
+                Proceso científico que analiza delitos mediante evidencias
+                físicas, testimoniales y técnicas para conocer la verdad.
+              </p>
+
+              <ul class="text-start small">
+                <li>Basado en método científico</li>
+                <li>Uso de evidencias</li>
+                <li>Reconstrucción de hechos</li>
+              </ul>
+
+              <button
+                class="btn btn-primary mt-auto"
+                data-bs-toggle="modal"
+                data-bs-target="#modalDef"
+              >
+                Ver más
+              </button>
+            </div>
+          </div>
+
+          <!-- OBJETIVO -->
+          <div class="col-md-4">
+            <div class="card shadow text-center p-3 h-100">
+              <h4 class="text-success">Objetivo</h4>
+              <p>
+                Determinar la existencia del delito e identificar al autor
+                mediante pruebas.
+              </p>
+
+              <ul class="text-start small">
+                <li>Comprobar el delito</li>
+                <li>Identificar responsables</li>
+                <li>Recolectar evidencias</li>
+              </ul>
+
+              <button
+                class="btn btn-success mt-auto"
+                data-bs-toggle="modal"
+                data-bs-target="#modalObj"
+              >
+                Ver más
+              </button>
+            </div>
+          </div>
+
+          <!-- TIPOS -->
+          <div class="col-md-4">
+            <div class="card shadow text-center p-3 h-100">
+              <h4 class="text-warning">Tipos</h4>
+              <p>
+                La investigación puede realizarse antes o después del delito
+                dependiendo del caso.
+              </p>
+
+              <ul class="text-start small">
+                <li>Reactiva</li>
+                <li>Proactiva</li>
+                <li>Preventiva</li>
+              </ul>
+
+              <button
+                class="btn btn-warning mt-auto"
+                data-bs-toggle="modal"
+                data-bs-target="#modalTipos"
+              >
+                Ver más
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- EXTRA INFO -->
+        <div class="mt-5">
+          <div class="card shadow p-4">
+            <h5 class="text-center">
+              Importancia de la Investigación Criminal
+            </h5>
             <p>
-              Proceso científico para analizar delitos y encontrar la verdad.
+              La investigación criminal permite esclarecer hechos delictivos,
+              garantizar justicia y evitar la impunidad. Además, ayuda a
+              reconstruir los hechos mediante pruebas científicas, lo cual
+              fortalece el sistema judicial.
+            </p>
+            <p>
+              Su correcta aplicación asegura que las decisiones judiciales se
+              basen en pruebas objetivas y no en suposiciones, contribuyendo a
+              una justicia más precisa y confiable.
             </p>
           </div>
-
-          <div class="card">
-            <h3>Objetivo</h3>
-            <p>Determinar si hubo delito e identificar responsables.</p>
-          </div>
-
-          <div class="card">
-            <h3>Tipos</h3>
-            <p>Investigación reactiva y proactiva.</p>
-          </div>
         </div>
       </div>
     </section>
+
+    <!-- MODALES -->
+
+    <!-- DEFINICIÓN -->
+    <div class="modal fade" id="modalDef">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title">Definición Completa</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              La investigación criminal es un proceso científico mediante el
+              cual se obtiene información objetiva para analizar, verificar y
+              contrastar hipótesis sobre un hecho delictivo.
+            </p>
+            <p>
+              Se basa en la recolección de evidencias, el análisis de indicios y
+              la reconstrucción de los hechos con el fin de descubrir la verdad
+              y determinar la responsabilidad de los involucrados.
+            </p>
+            <p>
+              Este proceso es fundamental en la administración de justicia, ya
+              que permite fundamentar decisiones judiciales en pruebas
+              verificables.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OBJETIVO -->
+    <div class="modal fade" id="modalObj">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title">Objetivos de la Investigación Criminal</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>Comprobar si se ha cometido un delito</li>
+              <li>Determinar las circunstancias del hecho</li>
+              <li>Identificar al autor o responsables</li>
+              <li>Recolectar y preservar evidencias</li>
+              <li>Reconstruir los hechos de manera lógica</li>
+              <li>Apoyar el proceso judicial con pruebas válidas</li>
+            </ul>
+
+            <p>
+              Estos objetivos permiten que la investigación sea efectiva y
+              contribuya a la correcta aplicación de la justicia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TIPOS -->
+    <div class="modal fade" id="modalTipos">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-warning">
+            <h5 class="modal-title">Tipos de Investigación Criminal</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <h6>🔹 Investigación Reactiva</h6>
+            <p>
+              Se realiza después de ocurrido el delito. Incluye la denuncia,
+              inspección del lugar, recolección de pruebas y análisis de
+              evidencias.
+            </p>
+
+            <h6>🔹 Investigación Proactiva</h6>
+            <p>
+              Se realiza antes o durante el delito con el fin de prevenir o
+              detectar actividades criminales.
+            </p>
+
+            <h6>🔹 Investigación Preventiva</h6>
+            <p>
+              Busca anticiparse a los hechos delictivos mediante inteligencia,
+              vigilancia y análisis de patrones criminales.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- DESARROLLO -->
-    <section id="desarrollo" class="section">
+    <section id="desarrollo" class="py-5 bg-light">
       <div class="container">
-        <h2>Desarrollo</h2>
+        <h2 class="text-center mb-4">Desarrollo</h2>
 
-        <div class="cards">
-          <div class="card">
-            <h3>Método Científico</h3>
-            <p>Observación → hipótesis → experimentación → conclusión.</p>
+        <p class="text-center mb-5">
+          El desarrollo de la investigación criminal se basa en la aplicación
+          del método científico, principios fundamentales y técnicas de la
+          criminalística que permiten analizar, interpretar y reconstruir los
+          hechos delictivos.
+        </p>
+
+        <div class="row g-4">
+          <!-- MÉTODO CIENTÍFICO -->
+          <div class="col-md-4">
+            <div class="card shadow p-3 h-100 text-center">
+              <h5 class="text-primary">Método Científico</h5>
+              <p>
+                Es la base de la investigación criminal para analizar hechos y
+                obtener conclusiones válidas.
+              </p>
+
+              <ul class="text-start small">
+                <li>Observación</li>
+                <li>Hipótesis</li>
+                <li>Experimentación</li>
+                <li>Conclusión</li>
+              </ul>
+
+              <button
+                class="btn btn-primary mt-auto"
+                data-bs-toggle="modal"
+                data-bs-target="#modalMetodo"
+              >
+                Ver más
+              </button>
+            </div>
           </div>
 
-          <div class="card">
-            <h3>Principios</h3>
-            <p>Uso, intercambio, reconstrucción, probabilidad y certeza.</p>
+          <!-- PRINCIPIOS -->
+          <div class="col-md-4">
+            <div class="card shadow p-3 h-100 text-center">
+              <h5 class="text-success">Principios</h5>
+              <p>
+                Son reglas fundamentales que explican cómo se produce un hecho
+                delictivo.
+              </p>
+
+              <ul class="text-start small">
+                <li>Uso</li>
+                <li>Intercambio</li>
+                <li>Reconstrucción</li>
+              </ul>
+
+              <button
+                class="btn btn-success mt-auto"
+                data-bs-toggle="modal"
+                data-bs-target="#modalPrincipios"
+              >
+                Ver más
+              </button>
+            </div>
           </div>
 
-          <div class="card">
-            <h3>Criminalística</h3>
-            <p>Responde al quién, cómo, cuándo y dónde del delito.</p>
+          <!-- CRIMINALÍSTICA -->
+          <div class="col-md-4">
+            <div class="card shadow p-3 h-100 text-center">
+              <h5 class="text-warning">Criminalística</h5>
+              <p>
+                Ciencia que analiza evidencias para esclarecer los hechos
+                delictivos.
+              </p>
+
+              <ul class="text-start small">
+                <li>¿Quién?</li>
+                <li>¿Cómo?</li>
+                <li>¿Cuándo?</li>
+                <li>¿Dónde?</li>
+              </ul>
+
+              <button
+                class="btn btn-warning mt-auto"
+                data-bs-toggle="modal"
+                data-bs-target="#modalCriminalistica"
+              >
+                Ver más
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- EXTRA INFO -->
+        <div class="mt-5">
+          <div class="card shadow p-4">
+            <h5 class="text-center">
+              Importancia del Desarrollo en la Investigación
+            </h5>
+            <p>
+              El desarrollo de la investigación criminal permite aplicar
+              conocimientos científicos y técnicos para lograr resultados
+              precisos. A través del análisis de evidencias y la aplicación de
+              principios criminalísticos, se logra reconstruir los hechos y
+              determinar responsabilidades.
+            </p>
+            <p>
+              Este proceso es fundamental para garantizar una justicia objetiva,
+              evitando errores y asegurando que las conclusiones estén basadas
+              en pruebas verificables.
+            </p>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- MODALES -->
+
+    <!-- MÉTODO -->
+    <div class="modal fade" id="modalMetodo">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title">Método Científico en la Investigación</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              <strong>Observación:</strong> Se analiza la escena del crimen.
+            </p>
+            <p>
+              <strong>Hipótesis:</strong> Se plantean posibles explicaciones del
+              hecho.
+            </p>
+            <p>
+              <strong>Experimentación:</strong> Se analizan pruebas y
+              evidencias.
+            </p>
+            <p>
+              <strong>Conclusión:</strong> Se determina la verdad de los hechos.
+            </p>
+
+            <p>
+              Este método permite que la investigación sea objetiva, lógica y
+              basada en pruebas científicas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRINCIPIOS -->
+    <div class="modal fade" id="modalPrincipios">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title">Principios de la Criminalística</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>
+                <strong>Uso:</strong> Siempre se utiliza un medio en el delito
+              </li>
+              <li><strong>Producción:</strong> Se generan evidencias</li>
+              <li><strong>Intercambio:</strong> Transferencia de indicios</li>
+              <li>
+                <strong>Correspondencia:</strong> Relación entre objeto y huella
+              </li>
+              <li>
+                <strong>Reconstrucción:</strong> Se reconstruyen los hechos
+              </li>
+              <li><strong>Probabilidad:</strong> Evaluación de hipótesis</li>
+              <li><strong>Certeza:</strong> Conclusión basada en pruebas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CRIMINALÍSTICA -->
+    <div class="modal fade" id="modalCriminalistica">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-warning">
+            <h5 class="modal-title">Criminalística</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              La criminalística es la ciencia que aplica conocimientos técnicos
+              y científicos para investigar delitos.
+            </p>
+
+            <p>Permite responder:</p>
+            <ul>
+              <li>¿Quién cometió el delito?</li>
+              <li>¿Cómo ocurrió?</li>
+              <li>¿Cuándo sucedió?</li>
+              <li>¿Dónde ocurrió?</li>
+            </ul>
+
+            <p>
+              Se basa en el análisis de evidencias físicas, químicas y
+              biológicas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- PRUEBAS -->
-    <section id="pruebas" class="section">
+    <section id="pruebas" class="py-5">
       <div class="container">
-        <h2>Recolección de Pruebas</h2>
+        <h2 class="text-center mb-4">Recolección de Pruebas</h2>
 
-        <div class="cards">
-          <div class="card">
-            <h3>¿Qué?</h3>
-            <p>Recolección de evidencias.</p>
+        <p class="text-center mb-5">
+          La recolección de pruebas es un proceso fundamental en la
+          investigación criminal, ya que permite obtener evidencias que servirán
+          para identificar al autor del delito y reconstruir los hechos.
+        </p>
+
+        <div class="row g-4">
+          <!-- QUE -->
+          <div class="col-md-4">
+            <div class="card shadow p-3 h-100 text-center">
+              <h5 class="text-primary">¿Qué?</h5>
+              <p>Recolección de evidencias físicas y biológicas.</p>
+
+              <ul class="text-start small">
+                <li>Huellas</li>
+                <li>Sangre</li>
+                <li>Objetos</li>
+              </ul>
+
+              <button
+                class="btn btn-primary mt-auto"
+                data-bs-toggle="modal"
+                data-bs-target="#modalQue"
+              >
+                Ver más
+              </button>
+            </div>
           </div>
 
-          <div class="card">
-            <h3>¿Quién?</h3>
-            <p>Investigadores criminalísticos.</p>
+          <!-- QUIEN -->
+          <div class="col-md-4">
+            <div class="card shadow p-3 h-100 text-center">
+              <h5 class="text-success">¿Quién?</h5>
+              <p>Personal especializado en criminalística.</p>
+
+              <ul class="text-start small">
+                <li>Peritos</li>
+                <li>Investigadores</li>
+                <li>Policía científica</li>
+              </ul>
+
+              <button
+                class="btn btn-success mt-auto"
+                data-bs-toggle="modal"
+                data-bs-target="#modalQuien"
+              >
+                Ver más
+              </button>
+            </div>
           </div>
 
-          <div class="card">
-            <h3>¿Cuándo?</h3>
-            <p>Lo antes posible.</p>
+          <!-- CUANDO -->
+          <div class="col-md-4">
+            <div class="card shadow p-3 h-100 text-center">
+              <h5 class="text-warning">¿Cuándo?</h5>
+              <p>Inmediatamente después del delito.</p>
+
+              <ul class="text-start small">
+                <li>Evitar contaminación</li>
+                <li>Preservar evidencias</li>
+                <li>Actuar rápido</li>
+              </ul>
+
+              <button
+                class="btn btn-warning mt-auto"
+                data-bs-toggle="modal"
+                data-bs-target="#modalCuando"
+              >
+                Ver más
+              </button>
+            </div>
           </div>
         </div>
 
-        <div class="image-container">
-          <img src="images/pruebas.jpg" />
+        <!-- TABLA -->
+        <div class="mt-5">
+          <h4 class="text-center mb-3">Clasificación de Pruebas</h4>
+
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead class="table-dark">
+                <tr>
+                  <th>Tipo</th>
+                  <th>Descripción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Orgánicas</td>
+                  <td>Sangre, saliva, cabello, fluidos biológicos.</td>
+                </tr>
+                <tr>
+                  <td>Inorgánicas</td>
+                  <td>Armas, documentos, fibras, objetos.</td>
+                </tr>
+                <tr>
+                  <td>Documentales</td>
+                  <td>Archivos, mensajes, registros digitales.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- CADENA -->
-    <section id="cadena" class="section">
-      <div class="container">
-        <h2>Cadena de Custodia</h2>
+    <!-- MODALES -->
 
-        <div class="card">
-          <p>
-            Garantiza que la evidencia no sea alterada desde la escena hasta el
-            juicio.
-          </p>
+    <!-- QUE -->
+    <div class="modal fade" id="modalQue">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title">Recolección de Evidencias</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              La recolección de evidencias consiste en identificar, levantar,
+              embalar y preservar todos los indicios encontrados en la escena
+              del crimen.
+            </p>
+            <p>
+              Estas evidencias pueden ser físicas, biológicas o digitales y
+              deben ser manipuladas con extremo cuidado para evitar su
+              alteración.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUIEN -->
+    <div class="modal fade" id="modalQuien">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title">Responsables de la Recolección</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              La recolección de pruebas es realizada por personal especializado
+              como:
+            </p>
+            <ul>
+              <li>Peritos criminalísticos</li>
+              <li>Policía científica</li>
+              <li>Investigadores forenses</li>
+            </ul>
+            <p>
+              Estos profesionales aplican técnicas específicas para garantizar
+              la validez de la evidencia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CUANDO -->
+    <div class="modal fade" id="modalCuando">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-warning">
+            <h5 class="modal-title">Momento de Recolección</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              La recolección de pruebas debe realizarse inmediatamente después
+              del hecho delictivo para evitar la pérdida o contaminación de
+              evidencias.
+            </p>
+            <p>
+              Un retraso en la intervención puede afectar la calidad de la
+              prueba y dificultar la investigación.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CADENA DE CUSTODIA -->
+    <section id="cadena" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Cadena de Custodia</h2>
+
+        <p class="text-center mb-5">
+          La cadena de custodia es el proceso que garantiza la integridad,
+          autenticidad y conservación de las evidencias desde su recolección
+          hasta su presentación en juicio.
+        </p>
+
+        <!-- ETAPAS -->
+        <div class="row g-4">
+          <!-- RECOLECCION -->
+          <div class="col-md-3">
+            <div class="card shadow p-3 text-center h-100">
+              <h6 class="text-primary">Recolección</h6>
+              <p>Obtención de evidencias en la escena.</p>
+
+              <button
+                class="btn btn-primary btn-sm mt-auto"
+                data-bs-toggle="modal"
+                data-bs-target="#modalReco"
+              >
+                Ver más
+              </button>
+            </div>
+          </div>
+
+          <!-- EMBALAJE -->
+          <div class="col-md-3">
+            <div class="card shadow p-3 text-center h-100">
+              <h6 class="text-success">Embalaje</h6>
+              <p>Protección y etiquetado de pruebas.</p>
+
+              <button
+                class="btn btn-success btn-sm mt-auto"
+                data-bs-toggle="modal"
+                data-bs-target="#modalEmb"
+              >
+                Ver más
+              </button>
+            </div>
+          </div>
+
+          <!-- TRANSPORTE -->
+          <div class="col-md-3">
+            <div class="card shadow p-3 text-center h-100">
+              <h6 class="text-warning">Transporte</h6>
+              <p>Traslado seguro de evidencias.</p>
+
+              <button
+                class="btn btn-warning btn-sm mt-auto"
+                data-bs-toggle="modal"
+                data-bs-target="#modalTrans"
+              >
+                Ver más
+              </button>
+            </div>
+          </div>
+
+          <!-- ANALISIS -->
+          <div class="col-md-3">
+            <div class="card shadow p-3 text-center h-100">
+              <h6 class="text-danger">Análisis</h6>
+              <p>Estudio en laboratorio.</p>
+
+              <button
+                class="btn btn-danger btn-sm mt-auto"
+                data-bs-toggle="modal"
+                data-bs-target="#modalAnalisis"
+              >
+                Ver más
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRINCIPIOS -->
+        <div class="mt-5">
+          <div class="card shadow p-4">
+            <h5 class="text-center mb-3">
+              Principios de la Cadena de Custodia
+            </h5>
+
+            <ul>
+              <li>
+                <strong>Identidad:</strong> La evidencia debe ser la misma desde
+                su recolección.
+              </li>
+              <li>
+                <strong>Integridad:</strong> No debe ser alterada ni
+                contaminada.
+              </li>
+              <li>
+                <strong>Preservación:</strong> Mantener condiciones adecuadas.
+              </li>
+              <li><strong>Seguridad:</strong> Evitar manipulación indebida.</li>
+              <li><strong>Registro:</strong> Todo debe estar documentado.</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- MODALES -->
+
+    <!-- RECOLECCION -->
+    <div class="modal fade" id="modalReco">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title">Recolección</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            La evidencia es recolectada en la escena del crimen por personal
+            especializado, asegurando que no sea contaminada ni alterada.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EMBALAJE -->
+    <div class="modal fade" id="modalEmb">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title">Embalaje</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            Las evidencias son protegidas en envases adecuados y etiquetadas con
+            información detallada para su identificación.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TRANSPORTE -->
+    <div class="modal fade" id="modalTrans">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-warning">
+            <h5 class="modal-title">Transporte</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            Las evidencias son trasladadas de manera segura hacia laboratorios o
+            almacenes, manteniendo su integridad.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ANALISIS -->
+    <div class="modal fade" id="modalAnalisis">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-danger text-white">
+            <h5 class="modal-title">Análisis</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            Las evidencias son analizadas en laboratorio mediante técnicas
+            científicas para obtener resultados confiables.
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- AUTOR -->
-    <section id="autor" class="section">
+    <section id="autor" class="py-5">
       <div class="container">
-        <h2>Identificación del Autor</h2>
+        <h2 class="text-center mb-4">Identificación del Autor</h2>
 
-        <div class="cards">
-          <div class="card">
-            <h3>Dactiloscopía</h3>
-            <p>Huellas dactilares únicas.</p>
+        <p class="text-center mb-5">
+          La identificación del autor consiste en determinar quién cometió el
+          delito mediante técnicas científicas que analizan características
+          únicas del individuo.
+        </p>
+
+        <div class="row g-4">
+          <!-- DACTILOSCOPIA -->
+          <div class="col-md-4">
+            <div class="card shadow p-3 text-center h-100">
+              <h5 class="text-primary">Dactiloscopía</h5>
+              <p>
+                Estudio de las huellas dactilares, únicas e irrepetibles en cada
+                persona.
+              </p>
+
+              <button
+                class="btn btn-primary mt-auto"
+                data-bs-toggle="modal"
+                data-bs-target="#modalDact"
+              >
+                Ver más
+              </button>
+            </div>
           </div>
 
-          <div class="card">
-            <h3>ADN</h3>
-            <p>Identificación genética.</p>
+          <!-- ADN -->
+          <div class="col-md-4">
+            <div class="card shadow p-3 text-center h-100">
+              <h5 class="text-success">ADN</h5>
+              <p>
+                Método más preciso basado en el análisis genético de muestras
+                biológicas.
+              </p>
+
+              <button
+                class="btn btn-success mt-auto"
+                data-bs-toggle="modal"
+                data-bs-target="#modalADN"
+              >
+                Ver más
+              </button>
+            </div>
           </div>
 
-          <div class="card">
-            <h3>Reconocimiento</h3>
-            <p>Fotográfico o en rueda.</p>
+          <!-- RECONOCIMIENTO -->
+          <div class="col-md-4">
+            <div class="card shadow p-3 text-center h-100">
+              <h5 class="text-warning">Reconocimiento</h5>
+              <p>
+                Identificación mediante testigos, fotografías o rueda de
+                personas.
+              </p>
+
+              <button
+                class="btn btn-warning mt-auto"
+                data-bs-toggle="modal"
+                data-bs-target="#modalRecon"
+              >
+                Ver más
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- OTROS METODOS -->
+        <div class="mt-5">
+          <div class="card shadow p-4">
+            <h5 class="text-center mb-3">Otros Métodos de Identificación</h5>
+
+            <ul>
+              <li>
+                <strong>Antropometría:</strong> Medición del cuerpo humano.
+              </li>
+              <li><strong>Retrato hablado:</strong> Reconstrucción facial.</li>
+              <li><strong>Huellas:</strong> Pisadas, mordidas, escritura.</li>
+              <li>
+                <strong>Reconocimiento digital:</strong> Bases de datos
+                biométricas.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- MODALES -->
+
+    <!-- DACTILOSCOPIA -->
+    <div class="modal fade" id="modalDact">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title">Dactiloscopía</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            La dactiloscopía estudia las huellas dactilares, las cuales son
+            únicas, permanentes e inmutables en cada persona. Es uno de los
+            métodos más utilizados en criminalística para identificar a un
+            individuo.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ADN -->
+    <div class="modal fade" id="modalADN">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title">Identificación por ADN</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            El análisis de ADN permite identificar a una persona mediante
+            muestras biológicas como sangre, saliva o cabello. Es el método más
+            preciso y confiable en la actualidad.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RECONOCIMIENTO -->
+    <div class="modal fade" id="modalRecon">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-warning">
+            <h5 class="modal-title">Reconocimiento</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            El reconocimiento puede realizarse mediante testigos, fotografías o
+            ruedas de personas. Es útil, pero puede ser menos confiable que los
+            métodos científicos.
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- INTEGRANTES -->
-    <section id="integrantes" class="section">
+    <section id="integrantes" class="py-5 bg-light">
       <div class="container">
-        <h2>Integrantes</h2>
+        <h2 class="text-center mb-4">Integrantes</h2>
 
-        <div class="grid">
-          <div class="person">ARUQUIPA JAVIER</div>
-          <div class="person">AYAVIRI VICTOR</div>
-          <div class="person">CHINO FRANZ</div>
-          <div class="person">COLQUE MARY</div>
-          <div class="person">CÓNDORI ARIEL</div>
-          <div class="person">ESPINOZA JHONNY</div>
-          <div class="person">LÓPEZ ISAAC</div>
-          <div class="person">MAYTA RUBÉN</div>
-          <div class="person">CRISPIN FREDDY</div>
-          <div class="person">POMA JUAN CARLOS</div>
-          <div class="person">QUISPE DANIEL</div>
-          <div class="person">VARGAS JHON</div>
+        <div class="row g-4 text-center">
+          <!-- INTEGRANTE -->
+          <div class="col-md-3 col-sm-6">
+            <div class="card shadow-sm p-3">
+              <img
+                src="https://via.placeholder.com/150"
+                class="img-fluid rounded mb-2"
+              />
+              <h6>POMA JUAN CARLOS</h6>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="card shadow-sm p-3">
+              <img
+                src="https://via.placeholder.com/150"
+                class="img-fluid rounded mb-2"
+              />
+              <h6>ARUQUIPA MAMANI JAVIER</h6>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="card shadow-sm p-3">
+              <img
+                src="https://via.placeholder.com/150"
+                class="img-fluid rounded mb-2"
+              />
+              <h6>AYAVIRI FLORES VICTOR</h6>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="card shadow-sm p-3">
+              <img
+                src="https://via.placeholder.com/150"
+                class="img-fluid rounded mb-2"
+              />
+              <h6>CHINO FRANZ</h6>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="card shadow-sm p-3">
+              <img
+                src="https://via.placeholder.com/150"
+                class="img-fluid rounded mb-2"
+              />
+              <h6>COLQUE MARY</h6>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="card shadow-sm p-3">
+              <img
+                src="https://via.placeholder.com/150"
+                class="img-fluid rounded mb-2"
+              />
+              <h6>CÓNDORI ARIEL</h6>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="card shadow-sm p-3">
+              <img
+                src="https://via.placeholder.com/150"
+                class="img-fluid rounded mb-2"
+              />
+              <h6>ESPINOZA JHONNY</h6>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="card shadow-sm p-3">
+              <img
+                src="https://via.placeholder.com/150"
+                class="img-fluid rounded mb-2"
+              />
+              <h6>LÓPEZ ISAAC</h6>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="card shadow-sm p-3">
+              <img
+                src="https://via.placeholder.com/150"
+                class="img-fluid rounded mb-2"
+              />
+              <h6>MAYTA RUBÉN</h6>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="card shadow-sm p-3">
+              <img
+                src="https://via.placeholder.com/150"
+                class="img-fluid rounded mb-2"
+              />
+              <h6>CRISPIN FREDDY</h6>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="card shadow-sm p-3">
+              <img
+                src="https://via.placeholder.com/150"
+                class="img-fluid rounded mb-2"
+              />
+              <h6>QUISPE DANIEL</h6>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="card shadow-sm p-3">
+              <img
+                src="https://via.placeholder.com/150"
+                class="img-fluid rounded mb-2"
+              />
+              <h6>VARGAS JHON</h6>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <footer>
-      <p>© 2026 Investigación Criminal</p>
+    <footer class="bg-dark text-white text-center p-3">
+      © 2026 Investigación Criminal
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
