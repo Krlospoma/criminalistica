@@ -17,23 +17,38 @@
 
   <body>
     <!-- HEADER -->
-    <header class="bg-dark text-white p-3 sticky-top text-center">
-      <h1>Investigación Criminal</h1>
+    <header class="sticky-top">
+      <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container">
+          <!-- TÍTULO -->
+          <a class="navbar-brand mx-auto" href="#"> Investigación Criminal </a>
 
-      <div>
-        <a href="#intro" class="btn btn-outline-light btn-sm m-1"
-          >Introducción</a
-        >
-        <a href="#desarrollo" class="btn btn-outline-light btn-sm m-1"
-          >Desarrollo</a
-        >
-        <a href="#pruebas" class="btn btn-outline-light btn-sm m-1">Pruebas</a>
-        <a href="#cadena" class="btn btn-outline-light btn-sm m-1">Cadena</a>
-        <a href="#autor" class="btn btn-outline-light btn-sm m-1">Autor</a>
-        <a href="#integrantes" class="btn btn-outline-light btn-sm m-1"
-          >Integrantes</a
-        >
-      </div>
+          <!-- BOTÓN HAMBURGUESA -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- MENÚ OCULTO -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="menuNav"
+          >
+            <div class="navbar-nav text-center">
+              <a class="nav-link" href="#intro">Introducción</a>
+              <a class="nav-link" href="#desarrollo">Desarrollo</a>
+              <a class="nav-link" href="#pruebas">Pruebas</a>
+              <a class="nav-link" href="#cadena">Cadena</a>
+              <a class="nav-link" href="#autor">Autor</a>
+              <a class="nav-link" href="#integrantes">Integrantes</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- INTRO -->
