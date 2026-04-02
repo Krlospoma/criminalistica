@@ -16,12 +16,20 @@
   </head>
 
   <body>
-    <!-- HEADER -->
     <header class="sticky-top">
       <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
         <div class="container">
-          <!-- TÍTULO -->
-          <a class="navbar-brand mx-auto" href="#"> Investigación Criminal </a>
+          <!-- LOGO + TITULO -->
+          <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+            <img
+              src="img/logo.png"
+              alt="logo"
+              width="40"
+              height="40"
+              class="rounded-circle"
+            />
+            <span>Investigación Criminal</span>
+          </a>
 
           <!-- BOTÓN HAMBURGUESA -->
           <button
@@ -33,18 +41,28 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <!-- MENÚ OCULTO -->
+          <!-- MENÚ -->
           <div
             class="collapse navbar-collapse justify-content-center"
             id="menuNav"
           >
             <div class="navbar-nav text-center">
-              <a class="nav-link" href="#intro">Introducción</a>
-              <a class="nav-link" href="#desarrollo">Desarrollo</a>
-              <a class="nav-link" href="#pruebas">Pruebas</a>
-              <a class="nav-link" href="#cadena">Cadena</a>
-              <a class="nav-link" href="#autor">Autor</a>
-              <a class="nav-link" href="#integrantes">Integrantes</a>
+              <a class="nav-link" href="#intro" onclick="cerrarMenu()"
+                >Introducción</a
+              >
+              <a class="nav-link" href="#desarrollo" onclick="cerrarMenu()"
+                >Desarrollo</a
+              >
+              <a class="nav-link" href="#pruebas" onclick="cerrarMenu()"
+                >Pruebas</a
+              >
+              <a class="nav-link" href="#cadena" onclick="cerrarMenu()"
+                >Cadena</a
+              >
+              <a class="nav-link" href="#autor" onclick="cerrarMenu()">Autor</a>
+              <a class="nav-link" href="#integrantes" onclick="cerrarMenu()"
+                >Integrantes</a
+              >
             </div>
           </div>
         </div>
